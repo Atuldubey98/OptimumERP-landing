@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptimumERP | Intelligent & Private Enterprise Resource Planning</title>
+    <meta name="description"
+        content="Local-First & Cloud-Ready Enterprise Resource Planning with Integrated AI Intelligence.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+    <div class="glow-background"></div>
+
+    <header class="navbar glass">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="favicon.svg" alt="OptimumERP Logo" class="logo-icon">
+                <span class="logo-text">OptimumERP</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#ai-integrations" class="nav-link">AI Integrations</a>
+                <a href="#deployment" class="nav-link">Deployment</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn btn-primary"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get
+                    Started</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#features" class="mobile-nav-link">Features</a>
+            <a href="#ai-integrations" class="mobile-nav-link">AI Integrations</a>
+            <a href="#deployment" class="mobile-nav-link">Deployment</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+            <button class="btn btn-primary w-full mt-4"
+                onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); closeMobileMenu();">Get
+                Started</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero relative">
+            <div class="hero-grid-bg"></div>
+            <div class="container hero-container text-center relative z-10">
+                <div class="badge animate-fade-in-up">
+                    <span class="badge-dot"></span>
+                    Now with Multi-Provider AI (BYOK)
+                </div>
+                <h1 class="hero-title animate-fade-in-up" style="animation-delay: 0.1s;">
+                    The Future of ERP is <br />
+                    <span class="text-gradient">Intelligent & Private</span>
+                </h1>
+                <p class="hero-subtitle animate-fade-in-up" style="animation-delay: 0.2s;">
+                    Local-First & Cloud-Ready Enterprise Resource Planning with Integrated AI Intelligence. AI
+                    automation meets on-premise privacy without compromising your sensitive financial data.
+                </p>
+                <div class="hero-actions animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <a href="#features" class="btn btn-primary btn-lg">Get Started</a>
+                    <a href="#contact" class="btn btn-secondary btn-lg glass">Request Custom Install</a>
+                </div>
+
+                <div class="hero-dashboard-mockup animate-fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-url">optimum-erp.local/dashboard</div>
+                    </div>
+                    <div class="mockup-body">
+                        <!-- Abstract dashboard representation -->
+                        <div class="dashboard-sidebar">
+                            <div class="sidebar-item active"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="dashboard-top">
+                                <div class="stat-card"></div>
+                                <div class="stat-card"></div>
+                                <div class="stat-card"></div>
+                            </div>
+                            <div class="dashboard-main">
+                                <div class="chart-area">
+                                    <div class="chart-bar h-60"></div>
+                                    <div class="chart-bar h-80"></div>
+                                    <div class="chart-bar h-40"></div>
+                                    <div class="chart-bar h-100"></div>
+                                    <div class="chart-bar h-70"></div>
+                                </div>
+                                <div class="ai-chat-area">
+                                    <div class="chat-bubble bot">Generating invoice for Acme Corp...</div>
+                                    <div class="chat-bubble user">Extract data from PO.pdf</div>
+                                    <div class="chat-input-mock"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section id="features" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Powerful Automation, <span class="text-gradient">Zero Compromise</span>
+                    </h2>
+                    <p class="section-subtitle">Experience a modern ERP built for the AI era. Complete financial
+                        management coupled with intelligent, privacy-first agents.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card glass hover-lift">
+                        <div class="feature-icon-wrapper">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                <path
+                                    d="M12 2a2 2 0 0 1 2 2c-.11.85-.45 1.63-1 2.28.55.65.89 1.43 1 2.28a2 2 0 0 1-2 2 2 2 0 0 1-2-2c.11-.85.45-1.63 1-2.28-.55-.65-.89-1.43-1-2.28a2 2 0 0 1 2-2Z" />
+                                <path d="M12 10v12" />
+                                <path d="m8 14 4-4 4 4" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">AI-Powered Workflows (OptiBot)</h3>
+                        <p class="feature-desc">A natural language chat interface to automatically create bills, manage
+                            parties, and query complex financial data in seconds.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card glass hover-lift">
+                        <div class="feature-icon-wrapper">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <path d="M8 13h2" />
+                                <path d="M8 17h2" />
+                                <path d="M14 13h2" />
+                                <path d="M14 17h2" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">AI Document Auto-Fill</h3>
+                        <p class="feature-desc">Instantly extract structured, highly accurate data from PDF and
+                            image-based invoices or purchase orders, eliminating manual entry.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card glass hover-lift">
+                        <div class="feature-icon-wrapper">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                <rect width="18" height="18" x="3" y="3" rx="2" />
+                                <path d="M3 9h18" />
+                                <path d="M9 21V9" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Comprehensive Financials</h3>
+                        <p class="feature-desc">Full suite support for Invoices, Quotes, Proforma, and Purchase Orders
+                            with complete inventory tracking and ledger management.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-card glass hover-lift">
+                        <div class="feature-icon-wrapper">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Tally XML Sync</h3>
+                        <p class="feature-desc">Seamlessly import and synchronize your Masters and Vouchers with
+                            existing Tally software to keep your legacy systems up to date.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comprehensive Features Section -->
+        <section id="all-features" class="section bg-darker">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Everything You Need to <span class="text-gradient">Scale</span></h2>
+                    <p class="section-subtitle">A complete, uncompromising suite of tools designed to handle every aspect of your enterprise operations.</p>
+                </div>
+                
+                <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                    <!-- Card 1 -->
+                    <div class="feature-card glass hover-glow border-accent">
+                        <h3 class="card-title text-xl mb-4 text-accent" style="font-size: 1.25rem;">Core Financials & Documents</h3>
+                        <ul class="check-list mt-4">
+                            <li><strong>Invoicing:</strong> Quotes, Proformas, & Payments</li>
+                            <li><strong>Purchases:</strong> Purchase Orders & Vendor Bills</li>
+                            <li><strong>Expense Management:</strong> Track & categorize business costs</li>
+                            <li><strong>Tax Management:</strong> Multi-tax types (GST, VAT)</li>
+                            <li><strong>Multi-Currency:</strong> Custom decimal and format configs</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="feature-card glass hover-glow border-primary">
+                        <h3 class="card-title text-xl mb-4 text-primary" style="font-size: 1.25rem;">Inventory & Party Management</h3>
+                        <ul class="check-list mt-4">
+                            <li><strong>Parties & Vendors:</strong> Comprehensive balance tracking</li>
+                            <li><strong>Party Ledgers:</strong> Real-time financial transaction tracking</li>
+                            <li><strong>Product Catalog:</strong> Multi-unit support & categories</li>
+                            <li><strong>Bulk Operations:</strong> CSV import for parties & products</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="feature-card glass hover-glow border-accent">
+                        <h3 class="card-title text-xl mb-4 text-accent" style="font-size: 1.25rem;">Analytics & Compliance</h3>
+                        <ul class="check-list mt-4">
+                            <li><strong>Real-Time Dashboard:</strong> Track invoices, expenses & parties</li>
+                            <li><strong>GST Reports:</strong> GSTR1 and GSTR2 compliance</li>
+                            <li><strong>Transaction Reports:</strong> Deep filtering & analysis</li>
+                            <li><strong>Data Export:</strong> Download as PDF or Excel</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="feature-card glass hover-glow border-primary">
+                        <h3 class="card-title text-xl mb-4 text-primary" style="font-size: 1.25rem;">Organization & Security</h3>
+                        <ul class="check-list mt-4">
+                            <li><strong>Multi-Org Support:</strong> Manage multiple business units</li>
+                            <li><strong>Role-Based Access:</strong> Admin & staff privileges</li>
+                            <li><strong>Authentication:</strong> Email OTP & Google OAuth</li>
+                            <li><strong>Financial Years:</strong> Close & transition fiscal years</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="feature-card glass hover-glow border-accent">
+                        <h3 class="card-title text-xl mb-4 text-accent" style="font-size: 1.25rem;">AI & Automation</h3>
+                        <ul class="check-list mt-4">
+                            <li><strong>AI Document Auto-Fill:</strong> Extract from PDFs/Images</li>
+                            <li><strong>Natural Language AI:</strong> Conversational chat interface</li>
+                            <li><strong>Automated Notifications:</strong> Email alerts & document sending</li>
+                            <li><strong>AI Reports:</strong> Generate insights via chat commands</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="feature-card glass hover-glow border-primary">
+                        <h3 class="card-title text-xl mb-4 text-primary" style="font-size: 1.25rem;">Technical Excellence</h3>
+                        <ul class="check-list mt-4">
+                            <li><strong>Real-Time WebSocket:</strong> Live updates and chat</li>
+                            <li><strong>Offline-First:</strong> IndexedDB caching & PWA support</li>
+                            <li><strong>System Configs:</strong> Network storage & Winston logging</li>
+                            <li><strong>Subscription Plans:</strong> Free, Gold, and Platinum tiers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Integrations & Privacy Section -->
+        <section id="ai-integrations" class="section">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-content">
+                        <h2 class="section-title">Multi-Provider <br /><span class="text-gradient">BYOK
+                                Architecture</span></h2>
+                        <p class="text-lg text-muted mb-6">
+                            Bring Your Own Key (BYOK) for cloud models, or run completely offline with local models. You
+                            are always in control of your data privacy.
+                        </p>
+                        <ul class="feature-list">
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span><strong>Local Offline Processing:</strong> Connect to local Ollama models for 100%
+                                    air-gapped data privacy.</span>
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span><strong>Groq Integration:</strong> Lightning-fast inference via Groq for
+                                    high-speed automated workflows.</span>
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span><strong>Custom Integrations:</strong> Additional providers can be integrated on request to fit your unique workflow.</span>
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span><strong>Enterprise Security:</strong> Role-based access control, secure session
+                                    management, and automated network logging.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="split-visual">
+                        <div class="integration-circle-wrapper">
+                            <div class="center-circle glass pulse">OptimumERP</div>
+                            <div class="orbit-item item-1 glass">Ollama</div>
+                            <div class="orbit-item item-2 glass">Groq</div>
+                            <div class="orbit-item item-3 glass">Custom</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deployment Flexibility -->
+        <section id="deployment" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Deployment <span class="text-gradient">Flexibility</span></h2>
+                    <p class="section-subtitle">Choose the infrastructure that best aligns with your security compliance
+                        and operational requirements.</p>
+                </div>
+
+                <div class="deployment-cards">
+                    <div class="deployment-card glass hover-glow border-accent">
+                        <div class="card-badge">Cloud</div>
+                        <h3 class="card-title">SaaS Deployment</h3>
+                        <p class="card-desc">A modern, fully managed cloud deployment. Get up and running instantly with
+                            zero infrastructure overhead. Perfect for distributed teams.</p>
+                        <ul class="check-list mt-4">
+                            <li>Instant setup & updates</li>
+                            <li>High availability</li>
+                            <li>Managed backups</li>
+                        </ul>
+                    </div>
+
+                    <div class="deployment-card glass hover-glow border-primary">
+                        <div class="card-badge">Self-Hosted</div>
+                        <h3 class="card-title">On-Premise Installation</h3>
+                        <p class="card-desc">Install directly on your client servers for ultimate local-first privacy.
+                            Ensures sensitive financial data never leaves your internal network.</p>
+                        <ul class="check-list mt-4">
+                            <li>100% Data Sovereignty</li>
+                            <li>Air-gapped compatible</li>
+                            <li>Custom firewall rules</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom Requirements (CTA Section) -->
+        <section id="contact" class="section cta-section relative overflow-hidden">
+            <div class="cta-bg-glow"></div>
+            <div class="container relative z-10 text-center">
+                <h2 class="section-title">Need a <span class="text-gradient">Tailored Solution?</span></h2>
+                <p class="cta-subtitle">
+                    I offer custom on-premise installations, SaaS deployments, and specialized feature development to
+                    fit your exact business needs. Let's build the perfect ERP setup for your workflow.
+                </p>
+
+                <div class="contact-cards">
+                    <a href="mailto:atuldubey017@gmail.com" class="contact-card glass hover-lift">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        <span class="contact-text">atuldubey017@gmail.com</span>
+                        <span class="contact-label">Drop an email</span>
+                    </a>
+
+                    <a href="https://github.com/Atuldubey98" target="_blank" rel="noopener noreferrer"
+                        class="contact-card glass hover-lift">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                            <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </svg>
+                        <span class="contact-text">github.com/Atuldubey98</span>
+                        <span class="contact-label">View Profile</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo mb-4">
+                    <img src="favicon.svg" alt="OptimumERP Logo" class="logo-icon">
+                    <span class="logo-text">OptimumERP</span>
+                </a>
+                <p class="footer-desc">Local-First & Cloud-Ready Enterprise Resource Planning with Integrated AI
+                    Intelligence.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 class="link-title">Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#ai-integrations">AI Capabilities</a>
+                    <a href="#deployment">Deployment</a>
+                </div>
+                <div class="link-group">
+                    <h4 class="link-title">Connect</h4>
+                    <a href="mailto:[YOUR_EMAIL_HERE]">Email</a>
+                    <a href="https://github.com/Atuldubey98" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center text-sm text-muted">
+                &copy; <span id="year"></span> OptimumERP. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
