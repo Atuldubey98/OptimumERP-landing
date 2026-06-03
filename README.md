@@ -6,9 +6,16 @@
   **The Future of ERP is Intelligent & Private**
   
   <p>Local-First & Cloud-Ready Enterprise Resource Planning with Integrated AI Intelligence. AI automation meets on-premise privacy without compromising your sensitive financial data.</p>
-</div>
 
----
+  ---
+
+  ### 🚀 Try OptimumERP right now — no installation required
+
+  **👉 [https://optimumerp.onrender.com/](https://optimumerp.onrender.com/)**
+
+  > **Note:** The demo is hosted on Render's free tier. The server spins down when inactive, so **the first request may take 30–60 seconds** to respond while it wakes up. Subsequent requests will be fast.
+
+</div>
 
 ## 🚀 Overview
 

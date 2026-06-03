@@ -831,3 +831,83 @@ h1, h2, h3, h4 {
         height: 100px;
     }
 }
+
+/* --- Demo Link Styles --- */
+
+/* Glowing "Try Live Demo" button */
+.btn-demo {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-demo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, transparent 60%);
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.btn-demo:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 32px rgba(16, 185, 129, 0.5);
+    filter: brightness(1.08);
+}
+
+/* Navbar "Live Demo" link */
+.nav-link-demo {
+    color: #10b981 !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-weight: 600 !important;
+}
+
+.nav-link-demo:hover {
+    color: #34d399 !important;
+}
+
+/* Pulsing green dot indicator */
+.demo-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.8);
+    animation: pulse-demo-dot 2s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+@keyframes pulse-demo-dot {
+    0%, 100% { opacity: 1; box-shadow: 0 0 6px rgba(16, 185, 129, 0.8); }
+    50%       { opacity: 0.6; box-shadow: 0 0 14px rgba(16, 185, 129, 0.4); }
+}
+
+/* Mobile demo nav link */
+.mobile-nav-link-demo {
+    color: #10b981 !important;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+/* Hero demo note */
+.hero-demo-note {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+}
+
+.hero-demo-note strong {
+    color: var(--text-main);
+}
+
