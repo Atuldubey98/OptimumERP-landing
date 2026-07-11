@@ -81,4 +81,5 @@ Choose the infrastructure that best aligns with your security compliance and ope
 We offer custom on-premise installations, SaaS deployments, and specialized feature development to fit your exact business needs. Let's build the perfect ERP setup for your workflow.
 
 * **Email:** [atuldubey017@gmail.com](mailto:atuldubey017@gmail.com)
-* **GitHub:** [Atuldubey98](https://github.com/Atuldubey98)
+* **GitHub Repository:** [OptimumERP](https://github.com/Atuldubey98/OptimumERP)
+* **GitHub Profile:** [Atuldubey98](https://github.com/Atuldubey98)
